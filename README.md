@@ -1,27 +1,27 @@
-# MyApp
+# 🚀 MyApp – Angular Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.21.
+This project was generated using **Angular CLI v18.2.21** and follows a scalable, component-based architecture. It includes development setup, build instructions, logs, and complete usage guidelines.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 📌 Overview
 
-## Code scaffolding
+**MyApp** is a modern Angular application built with a focus on clean structure, modular code, and fast development workflow.  
+It supports real-time reloads, production builds, unit testing, and end-to-end testing.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 🛠️ Features
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- ⚡ Developed with Angular 18  
+- ♻️ Live development server with auto-reload  
+- 🧩 Component-based architecture  
+- 🛡️ TypeScript strict typing  
+- 🧪 Unit & E2E test support  
+- 📦 Optimized production builds  
+- 📁 Clean folder structure  
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 📂 Project Structure
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
