@@ -1,13 +1,20 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from './header/header.component';
+import { UserComponent } from './user/user.component';
+
 
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent],
+  imports:  [UserComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 
 export class AppComponent {
-  name = "";
+  userName = "Bruce";
+  userCity = "New York";
+  onUserChange(newName: string, userCity: string) {
+    this.userName = newName;
+    this.userCity = userCity;
+  }
+
 }
