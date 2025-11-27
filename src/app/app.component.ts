@@ -10,11 +10,9 @@ import { UserComponent } from './user/user.component';
 })
 
 export class AppComponent {
-  userName = "Bruce";
-  userCity = "New York";
-  onUserChange(newName: string, userCity: string) {
-    this.userName = newName;
-    this.userCity = userCity;
+  users: undefined|string[];
+  handleUsers(users: string[]) {
+    console.log('Received users from child component:', users);
+    this.users = users;
   }
-
 }

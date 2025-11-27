@@ -1,10 +1,7 @@
 <h1>Welcome to My Application</h1>
 
-<app-user [user]="userName" [city]="userCity"></app-user>
+<app-user (getUsers)="handleUsers($event)"></app-user>
 
-<select #selectedUser (change)="onUserChange(selectedUser.value, 'New York')">
-    <option value="Anil Sidhu">Anil Sidhu</option>
-    <option value="Sam ">Sam</option>
-    <option value="Peter">Peter</option>
-    <option value="Tony">Tony</option>
-</select> 
+@for(user of users; track user){
+    <h1>{{ user }}</h1>
+}

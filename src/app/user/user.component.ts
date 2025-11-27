@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -9,6 +9,10 @@ import { ActivatedRoute } from '@angular/router';
   standalone: true
 })
 export class UserComponent {
-  @Input () user: string = '';
-  @Input () city : string = '';
+  @Output() getUsers = new EventEmitter();
+  users = ['Anil Sidhu', 'John Doe', 'Jane Smith', 'Alice Johnson'];
+  
+   ngOnInit() {
+    this.getUsers.emit(this.users);
+  }
 }
