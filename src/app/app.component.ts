@@ -1,16 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-
+import { CurrencyConverterPipe } from './pipe/currency-converter.pipe';
 @Component({
   selector: 'app-root',
-  imports:  [CommonModule],
+  imports:  [CommonModule,CurrencyConverterPipe],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 
 export class AppComponent {
-  title = 'Code step by step';
-  name= "ANIL"
-  date = new Date();
-  amount = 10
+  amount = 10;
+  
 }
