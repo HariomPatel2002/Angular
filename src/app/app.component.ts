@@ -1,18 +1,16 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { UserComponent } from './user/user.component';
-
 
 @Component({
   selector: 'app-root',
-  imports:  [UserComponent],
+  imports:  [CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 
 export class AppComponent {
-  users: undefined|string[];
-  handleUsers(users: string[]) {
-    console.log('Received users from child component:', users);
-    this.users = users;
-  }
+  title = 'Code step by step';
+  name= "ANIL"
+  date = new Date();
+  amount = 10
 }
