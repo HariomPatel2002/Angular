@@ -1,14 +1,25 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { CurrencyConverterPipe } from './pipe/currency-converter.pipe';
+import { ProductService } from './services/product.service';
 @Component({
   selector: 'app-root',
-  imports:  [CommonModule,CurrencyConverterPipe],
+  imports:  [CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 
 export class AppComponent {
-  amount = 10;
-  
+  productData:{
+    name: string;
+    brand: string;
+    price: number;
+}[] | undefined;
+
+  constructor(private productService: ProductService){
+
+  }
+  getProduct(){
+    this.productData = this.productService.getProductData();
+    console.log(this.productData);
+  }
 }

@@ -1,4 +1,11 @@
-<h1>Pipes in Angular</h1>
-<h1>{{amount | currencyConverter}}</h1>
+<h1>Welcome to my project</h1>
 
-<h1>{{100 | currencyConverter:12}}</h1>
+<button (click)="getProduct()">Load Product Data</button>
+
+
+@for(item of productData; track item){
+    <ul>
+        <li>{{item.id}} - {{item.name}} - {{item.price | currencyConverter:'USD':'INR'}}</li>
+    </ul>
+
+}
