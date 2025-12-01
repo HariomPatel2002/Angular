@@ -1,11 +1,2 @@
-<h1>Welcome to my project</h1>
 
-<button (click)="getProduct()">Load Product Data</button>
-
-
-@for(item of productData; track item){
-    <ul>
-        <li>{{item.id}} - {{item.name}} - {{item.price | currencyConverter:'USD':'INR'}}</li>
-    </ul>
-
-}
+<router-outlet></router-outlet>

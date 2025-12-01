@@ -1,35 +1,15 @@
-.main-container{
-    text-align: center;
+.home-container {
+  text-align: center;
+  margin-top: 100px;
 }
-.btn{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin: 20px;
-    color: #fff;
-    cursor: pointer;
-    border: 1px solid #000;
+
+.btn-group {
+  margin-top: 20px;
 }
-.bg-red{
-    background-color: red;
-}
-.bg-black{
-    background-color: black;
-}
-.bg-green{
-    background-color: green;    
-}
-.btn:hover{
-    border: 1px solid #fff;
-    transform: scale(1.1);
-    transition: all 0.3s ease-in-out;
-}
-.count{
-    background: grey;
-    padding: 10px;
-    font-size: 30px;
-    margin-bottom: 30px;
-    width: 100px;
-    border-radius: 10px;
-    margin: auto;
+
+button {
+  margin: 10px;
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
 }
