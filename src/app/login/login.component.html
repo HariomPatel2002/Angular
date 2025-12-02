@@ -2,9 +2,9 @@
 <div class="main_login_div">
   <h1>Login to Your Account</h1>
 
-  <input class="login_input_field" type="email" placeholder="Enter your email" [(ngModel)]="email" />
+  <input class="login_input_field" type="email" placeholder="Enter your email" [(ngModel)]="loginData.email" />
   <br>
-  <input class="login_input_field" type="password" placeholder="Enter your password" [(ngModel)]="password" />
+  <input class="login_input_field" type="password" placeholder="Enter your password" [(ngModel)]="loginData.password" />
   <br>
   <button class="login_button" (click)="login()">Login</button>
 </div>
