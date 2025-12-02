@@ -1,6 +1,6 @@
 # 🚀 MyApp – Angular Application
 
-This project was generated using **Angular CLI v18.2.21** and follows a scalable, component-based architecture.  
+This project was generated using **Angular CLI v19.2.19** and follows a scalable, component-based architecture.  
 It includes development setup, build instructions, logs, and complete usage guidelines.
 
 ---
