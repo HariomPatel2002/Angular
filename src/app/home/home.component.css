@@ -1,0 +1,59 @@
+.home-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f7fa;
+  background-image: url('/assets/Home.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.home-card {
+  text-align: center;
+  padding: 40px 50px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.home-card h1 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 30px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login {
+  background: #2b7bff;
+  color: #fff;
+}
+
+.login:hover {
+  background: #1b63d6;
+}
+
+.signup {
+  background: #00c08a;
+  color: #fff;
+}
+
+.signup:hover {
+  background: #009e6e;
+}

@@ -1,12 +1,30 @@
-.main_login_div{
-    display: flex; flex-direction: column; align-items: center; justify-content: center; margin-top: 150px;
+html, body {
+    height: 100%;           /* Make html and body full height */
+    margin: 0;              /* Remove default margin */
+    padding: 0;             /* Remove default padding */
 }
-.login_input_field{
-    height: 20px; width: 290px;
+
+.main_login_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;          /* Full viewport height */
+    width: 100vw;           /* Full viewport width */
+    background-color: skyblue;
 }
-.login_button{
+
+.login_input_field {
+    height: 20px;
+    width: 290px;
+    margin-bottom: 10px;    /* Add spacing between inputs */
+}
+
+.login_button {
     background: black;
     color: white;
-    border-radius: 1px solid black;
-    width: 8%;
+    border: 1px solid black;  /* Fixed syntax */
+    border-radius: 3px;       /* Better look */
+    padding: 5px 10px;
+    cursor: pointer;
 }

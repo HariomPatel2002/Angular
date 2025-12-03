@@ -1,18 +1,32 @@
+body ,html{
+    overflow: hidden;
+}
+main {
+    height: calc(100% - 60px); /* Adjust if header is 60px tall */
+}
 nav {
     display: flex;
     justify-content: space-between;
-    margin-left: 10px;
-    margin-right: 10px;
+    align-items: center; /* Vertically center items */
+    padding: 0 10px;
 }
+
 ul {
-    list-style-type: none;
-    display: flex   ;
-    width: 200px;
-    justify-content: space-between;
+    list-style: none;
+    display: flex;
+    gap: 12px; /* Space between links */
+    margin: 0;
+    padding: 0;
 }
+
 ul li a {
     text-decoration: none;
+    color: black;
+    padding: 5px 10px;
 }
-acitve{
+
+a.active {
     background-color: red;
+    color: white;
+    border-radius: 4px;
 }
