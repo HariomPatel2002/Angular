@@ -1,0 +1,11 @@
+
+<div class="main_login_div">
+  <h1>Signup</h1>
+  <input class="login_input_field" type="name" placeholder="Enter your Name" [(ngModel)]="signupData.username">
+  <br>
+  <input class="login_input_field" type="email" placeholder="Enter your email" [(ngModel)]="signupData.email" />
+  <br>
+  <input class="login_input_field" type="password" placeholder="Enter your password" [(ngModel)]="signupData.password" />
+  <br>
+  <button class="login_button" (click)="signup()">signup</button>
+</div>

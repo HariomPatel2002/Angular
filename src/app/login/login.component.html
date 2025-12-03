@@ -1,1 +1,13 @@
-<h1>Login Page</h1>
+
+<div class="main_login_div">
+  <h1>Login to Your Account</h1>
+
+  <input class="login_input_field" type="email" placeholder="Enter your email" [(ngModel)]="loginData.email" name="email" #email="ngModel" required/>
+   <div *ngIf="email.invalid && email.touched" style="color: red; font-size: 12px;">
+    Email is required
+  </div>
+  <br>
+  <input class="login_input_field" type="password" placeholder="Enter your password" [(ngModel)]="loginData.password" />
+  <br>
+  <button class="login_button" (click)="login()">Login</button>
+</div>

@@ -1,16 +1,10 @@
-<h1>Home Page</h1>
+<div class="home-wrapper">
+  <div class="home-card">
+    <h1>Welcome to FinTrack</h1>
 
-<button (click)="goToProfile()">Go to Profile Page</button>
-
-<h1>User List</h1>
-
-<ul>
-    @for (user of users; track user.id) {
-    <li>
-        <a [routerLink]="['/user', user.id, user.name]">
-            {{ user.name }}
-        </a>
-
-    </li>
-    }
-</ul>
+    <div class="button-group">
+      <button class="btn login" (click)="goToLogin()">Login</button>
+      <button class="btn signup" (click)="goToSignup()">Sign Up</button>
+    </div>
+  </div>
+</div>

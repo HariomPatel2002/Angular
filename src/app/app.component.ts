@@ -1,18 +1,20 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { UserComponent } from './user/user.component';
+import { FormsModule } from '@angular/forms';
+import { Router, RouterOutlet } from '@angular/router';
+import { HeaderComponent } from './header/header.component';
 
 
 @Component({
   selector: 'app-root',
-  imports:  [UserComponent],
+  standalone: true,
+  imports: [CommonModule, FormsModule,RouterOutlet,HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-
 export class AppComponent {
-  users: undefined|string[];
-  handleUsers(users: string[]) {
-    console.log('Received users from child component:', users);
-    this.users = users;
-  }
+
+  constructor(private router: Router) {}
+
+
 }
